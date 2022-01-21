@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "AAAA,mBAAmB;AACnB,OAAO,CAAC,qFAAI;AAMZ,iBAAiB;ACPjB,iBAAiB;ADUjB,kBAAkB;AEVlB,kBAAkB;AAElB,gBAAgB;AAGhB,qBAAqB",
+    "sources": [
+        "Style.scss",
+        "Variables.scss",
+        "Color palette.scss"
+    ],
+    "names": [],
+    "file": "Style.css"
+}

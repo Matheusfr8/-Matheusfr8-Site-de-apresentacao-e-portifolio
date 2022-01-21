@@ -1,0 +1,16 @@
+/* Color Palette*/
+
+/*  Main color*/
+$hue-color:250;
+
+/*  Color Variables*/
+$first-color:hsl($hue-color, 69%, 61%);
+$first-color-second:hsl($hue-color, 69%, 61%);
+$first-color-alt:hsl($hue-color, 57%, 53%);
+$first-color-lighter:hsl($hue-color, 95%, 85%);
+$title-color:hsl($hue-color, 8%, 15%);
+$text-color:hsl($hue-color, 8%, 45%);
+$text-color-light:hsl($hue-color, 8%, 65%);
+$input-color:hsl($hue-color, 70%, 96%);
+$body-color:hsl($hue-color, 60%, 99%);
+$container-color:#FFF;
