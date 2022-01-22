@@ -1,9 +1,86 @@
-/*   GOOGLE FONTS*/
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 /*   VARIABLES */
 /*  Variables  */
 /* Color Palette*/
 /* Color Palette*/
 /*  Main color*/
 /*  Color Variables*/
+/*  Fonts and typography*/
+/*  Fonts and typography*/
+/*   GOOGLE FONTS*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+/*  Font sizes*/
+/*  Font weight*/
+/*     Font size for big screens*/
+/*  Margins*/
+/*  Margins*/
+/*  Bottom  */
+/*    CXXXXXX*/
+/*   Z - INDEX*/
+/*   Z - INDEX*/
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0 0 3rem 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  background-color: #fbfbfe;
+  color: #6d6a7c;
+}
+
+h1, h2, h3, h4 {
+  color: #242329;
+  font-weight: 600;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.section {
+  padding: 32px 0 64px;
+}
+
+.section__title {
+  font-size: 24px;
+}
+
+.section__subtitle {
+  display: block;
+  font-size: 13px;
+  margin-bottom: 3px;
+}
+
+.section__title, .section__subtitle {
+  text-align: center;
+}
+
+/*   LAYOUT */
+.container {
+  max-width: 768px;
+  margin-left: 5px;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  gap: 24px;
+}
 /*# sourceMappingURL=Style.css.map */

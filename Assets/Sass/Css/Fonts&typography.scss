@@ -1,0 +1,39 @@
+/*  Fonts and typography*/
+
+/*   GOOGLE FONTS*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+$body-font:'Poppins', sans-serif;
+
+/*  Font sizes*/
+$big-font-size:32px;
+$h1-font-size:24px;
+$h2-font-size:20px;
+$h3-font-size:18px;
+$normal-font-size:15px; 
+$small-font-size:13px; 
+$smaller-font-size:12px; 
+
+
+/*  Font weight*/
+$font-medium:500;
+$font-semi-bold:600;
+
+
+/*     Font size for big screens*/
+@media  screen and (min-width: 968px) {
+    
+    $big-font-size:48px;
+    $h1-font-size:36px;
+    $h2-font-size:24px;
+    $h3-font-size:20px;
+    $normal-font-size:16px; 
+    $small-font-size:14px; 
+    $smaller-font-size:13px; 
+}
+
+
+
+
+
