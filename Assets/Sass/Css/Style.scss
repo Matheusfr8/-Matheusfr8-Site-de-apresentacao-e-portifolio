@@ -366,7 +366,7 @@ img{
 .skills__learning{
     width: 90%;
 }
-.skills__close .skills_list{
+.skills__close .skills__list{
     height: 0;
     overflow: hidden;
 }
@@ -376,5 +376,4 @@ img{
 }
 .skills__open .skills__arrow{
     transform: rotate(180deg);
-
 }
