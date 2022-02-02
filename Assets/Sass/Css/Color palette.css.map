@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,kBAAkB;AAElB,gBAAgB;AAGhB,qBAAqB",
+    "sources": [
+        "Color palette.scss"
+    ],
+    "names": [],
+    "file": "Color palette.css"
+}

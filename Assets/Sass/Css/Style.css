@@ -1,0 +1,507 @@
+/*   VARIABLES */
+/*  Variables  */
+/* Color Palette*/
+/* Color Palette*/
+/*  Main color*/
+/*  Color Variables*/
+/*  Fonts and typography*/
+/*  Fonts and typography*/
+/*   GOOGLE FONTS*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+/*  Font sizes*/
+/*  Font weight*/
+/*     Font size for big screens*/
+/*  Margins*/
+/*  Margins*/
+/*  Bottom  */
+/*    CXXXXXX*/
+/*   Z - INDEX*/
+/*   Z - INDEX*/
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0 0 3rem 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  background-color: #fbfbfe;
+  color: #6d6a7c;
+}
+
+h1, h2, h3, h4 {
+  color: #242329;
+  font-weight: 600;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.section {
+  padding: 32px 0 64px;
+}
+
+.section__title {
+  font-size: 24px;
+}
+
+.section__subtitle {
+  display: block;
+  font-size: 13px;
+  margin-bottom: 3px;
+}
+
+.section__title, .section__subtitle {
+  text-align: center;
+}
+
+/*   LAYOUT */
+.container {
+  max-width: 768px;
+  margin-left: 5px;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  gap: 24px;
+}
+
+.header {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0%;
+  z-index: 100;
+  background: #fbfbfe;
+}
+
+/*  NAV*/
+.nav {
+  max-width: 968px;
+  height: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav__logo, .nav__toggle {
+  color: #242329;
+  font-weight: 500;
+}
+
+.nav__logo:hover {
+  color: #6e57e0;
+}
+
+.nav__toggle {
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.nav__toggle:hover {
+  color: #6e57e0;
+}
+
+@media screen and (max-width: 767px) {
+  .nav__menu {
+    position: fixed;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    border-color: #fbfbfe;
+    padding: 32px 24px 48px;
+    -webkit-box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 24px 24px 0 0;
+    -webkit-transition: .3s;
+    transition: .3s;
+  }
+}
+
+.nav__list {
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.nav__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 13px;
+  color: #242329;
+  font-weight: 500;
+}
+
+.nav__link:hover {
+  color: #6e57e0;
+}
+
+.nav__icon {
+  font-size: 20px;
+}
+
+.nav__close {
+  position: absolute;
+  right: 1.3px;
+  bottom: .5rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #6e57e0;
+}
+
+.nav__close:hover {
+  color: #6e57e0;
+}
+
+/*SHOW MENU*/
+.show-menu {
+  bottom: 0;
+}
+
+/*  HOME*/
+.home__container {
+  gap: 1rem;
+}
+
+.home__content {
+  -ms-grid-columns: .5fr .3fr;
+      grid-template-columns: .5fr .3fr;
+  padding-top: 3.5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.home__social {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: max-content;
+      grid-template-columns: -webkit-max-content;
+      grid-template-columns: max-content;
+  row-gap: 1rem;
+}
+
+.home__social-icon {
+  font-size: 1.25rem;
+  color: #6e57e0;
+}
+
+.home__social-icon:hover {
+  color: #5a43cb;
+}
+
+.home__blob {
+  width: 200px;
+  fill: #6e57e0;
+}
+
+.home_blob-img {
+  width: 170px;
+}
+
+.home__data {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+}
+
+.home_title {
+  font-size: 32px;
+}
+
+.home__subtitle {
+  font-size: 18px;
+  color: #6d6a7c;
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+}
+
+.home__description {
+  margin-bottom: 2rem;
+}
+
+.home__scroll {
+  display: none;
+}
+
+.home_scroll-button {
+  color: #6e57e0;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.home__scroll-button:hover {
+  -webkit-transform: translateY(0.25rem);
+          transform: translateY(0.25rem);
+}
+
+.home__scroll-mouse {
+  font-size: 2rem;
+}
+
+.home__scroll-name {
+  font-size: 13px;
+  color: #242329;
+  font-weight: 500;
+  margin-right: 0.25rem;
+}
+
+.home__scroll-arrow {
+  font-size: 1.25rem;
+}
+
+/*  BUTTONS*/
+.button {
+  display: inline-block;
+  background-color: #6e57e0;
+  color: #fff;
+  padding: 1rem;
+  border-radius: .5rem;
+  font-weight: 500;
+}
+
+.button:hover {
+  background-color: #5a43cb;
+}
+
+.button__icon {
+  font-size: 1.25rem;
+  margin-left: 5px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.button--flex {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/*  ABOUT*/
+.about__img {
+  width: 200px;
+  border-radius: .5rem;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.about__description {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.about__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-bottom: 2.5rem;
+}
+
+.about__info-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #242329;
+}
+
+.about__info-name {
+  font-size: 12px;
+}
+
+.about__info-title, .about__info-name {
+  display: block;
+  text-align: center;
+}
+
+.about__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.skills__container {
+  row-gap: 0;
+}
+
+.skills__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2.5rem;
+  cursor: pointer;
+}
+
+.skills__icon, .skills__arrow {
+  font-size: 2rem;
+  color: #6e57e0;
+}
+
+.skills__icon {
+  margin-right: 0.75rem;
+}
+
+.skills_title {
+  font-size: 18px;
+}
+
+.skills__subtitle {
+  font-size: 13px;
+  color: #a19fad;
+}
+
+.skills__arrow {
+  margin-left: auto;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.skills__list {
+  row-gap: 1.5rem;
+  padding-left: 2.7rem;
+}
+
+.skills__titles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.skills__name {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.skills__bar, .skills__percentage {
+  height: 5px;
+  border-radius: .25rem;
+}
+
+.skills__bar {
+  background-color: #c1b4fd;
+}
+
+.skills__percentage {
+  display: block;
+  background-color: #6e57e0;
+}
+
+.skills__html {
+  width: 90%;
+}
+
+.skills__css {
+  width: 80%;
+}
+
+.skills__sass {
+  width: 80%;
+}
+
+.skills__js {
+  width: 60%;
+}
+
+.skills__react {
+  width: 50%;
+}
+
+/* do the same proccess with backend skills when addin then
+.skills__html{
+    width: 90%;
+}
+.skills__css{
+    width: 80%;
+}
+.skills__sass{
+    width: 80%;
+}
+.skills__js{
+    width: 60%;
+}
+.skills__react{
+    width: 50%;
+}
+*/
+.skills__comunication {
+  width: 90%;
+}
+
+.skills__leadership {
+  width: 80%;
+}
+
+.skills__adaptability {
+  width: 80%;
+}
+
+.skills__learning {
+  width: 90%;
+}
+
+.skills__close .skills__list {
+  height: 0;
+  overflow: hidden;
+}
+
+.skills__open .skills__list {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  margin-bottom: 2.5rem;
+}
+
+.skills__open .skills__arrow {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+/*# sourceMappingURL=Style.css.map */

@@ -1,0 +1,379 @@
+
+
+
+/*   VARIABLES */
+@import 'Variables.scss';
+
+/* Color Palette*/
+@import 'Color palette.scss';
+
+/*  Fonts and typography*/
+@import'Fonts&typography.scss';
+
+/*  Margins*/
+@import'Margins.scss';
+
+/*   Z - INDEX*/
+@import'Z-index.scss';
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    }
+
+html{
+    scroll-behavior: smooth;
+    }
+body{
+        margin: 0 0 $header-height 0 ;
+        font-family:$body-font;
+        font-size:$normal-font-size;
+        background-color:$body-color;
+        color:$text-color;    
+    }
+h1,h2,h3,h4{
+        color:$title-color;
+        font-weight:$font-semi-bold;
+        }    
+ul{
+        list-style: none;
+    }
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}     
+.section{
+    padding:32px 0 64px ;
+}
+.section__title{
+    font-size: $h1-font-size;
+}
+.section__subtitle{
+    display: block;
+    font-size: $small-font-size;
+    margin-bottom: $mb-0-3;
+}
+.section__title, .section__subtitle{
+    text-align: center;
+}
+/*   LAYOUT */
+.container{
+    max-width: 768px;
+    margin-left: $mb-1-5;
+}
+.grid{
+    display: grid;
+    gap: 24px;
+}
+.header{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0%;
+    z-index: $z-fixed;
+    background: $body-color;
+}
+/*  NAV*/
+.nav{
+    max-width: 968px;
+    height: $header-height;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav__logo, .nav__toggle{
+    color: $title-color;
+    font-weight: $font-medium;
+}
+.nav__logo:hover{
+    color: $first-color;
+}
+.nav__toggle{
+    font-size: 1.1rem ;
+    cursor: pointer;
+}
+.nav__toggle:hover{
+    color: $first-color;
+}
+@media screen and (max-width: 767px){
+    .nav__menu{
+        position: fixed;
+        bottom: -100%;
+        left: 0;
+        width: 100%;
+        border-color: $body-color;
+        padding: 32px 24px 48px;
+        box-shadow: 0 -1px 4px rgba(0,0,0,.15);
+        border-radius: 24px 24px 0 0;
+        transition: .3s;
+    } 
+}
+.nav__list{
+    grid-template-columns: repeat(3, 1fr );
+    gap: 2rem;
+}
+.nav__link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: $small-font-size;
+    color: $title-color;
+    font-weight: $font-medium;
+}
+.nav__link:hover{
+    color: $first-color;
+}
+.nav__icon{
+    font-size: 20px;
+}
+.nav__close{
+    position:absolute;
+    right: 1.3px;
+    bottom: .5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: $first-color;
+}
+.nav__close:hover{
+    color: $first-color;
+}
+
+/*SHOW MENU*/
+.show-menu{
+    bottom:0;
+}
+
+/*  HOME*/
+.home__container{
+    gap: 1rem;
+}
+.home__content{
+    grid-template-columns: .5fr .3fr ;
+    padding-top: 3.5rem;
+    align-items: center;
+}
+.home__social{
+    display: grid;
+    grid-template-columns: max-content;
+    row-gap: 1rem;
+}
+.home__social-icon{
+    font-size: 1.25rem;
+    color: $first-color;
+}
+.home__social-icon:hover{
+    color: $first-color-alt;
+}
+.home__blob{
+    width: 200px;
+    fill: $first-color;
+}
+.home_blob-img{
+    width: 170px;
+}
+.home__data{
+    grid-column: 1/3;
+}
+.home_title{
+    font-size: $big-font-size;
+}
+.home__subtitle{
+    font-size: $h3-font-size;
+    color: $text-color;
+    font-weight: $font-medium;
+    margin-bottom: $mb-0-75;
+}
+.home__description{
+    margin-bottom: $mb-2;
+}
+.home__scroll{
+   display: none; 
+}
+.home_scroll-button{
+    color: $first-color;
+    transition: .3s;
+}
+.home__scroll-button:hover{
+    transform: translateY(.25rem);
+}
+.home__scroll-mouse{
+    font-size: 2rem;
+}
+.home__scroll-name{
+    font-size: $small-font-size;
+    color: $title-color;
+    font-weight: $font-medium;
+    margin-right: $mb-0-25;
+}
+.home__scroll-arrow{
+    font-size: 1.25rem;
+}
+
+/*  BUTTONS*/
+.button{
+    display: inline-block;
+    background-color: $first-color;
+    color: #fff;
+    padding: 1rem;
+    border-radius: .5rem;
+    font-weight: $font-medium;
+}
+.button:hover{
+    background-color: $first-color-alt;
+}
+.button__icon{
+    font-size: 1.25rem;
+    margin-left: $mb-0-5;
+    transition: .3s;
+}
+.button--flex{
+    display: inline-flex;
+    align-items: center;
+}
+
+/*  ABOUT*/
+.about__img{
+    width: 200px;
+    border-radius: .5rem;
+    justify-self: center;
+    align-self: center;
+}
+.about__description{
+    text-align: center;
+    margin-bottom: $mb-2-5;
+}
+.about__info{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: $mb-2-5;
+}
+.about__info-title{
+    font-size: $h2-font-size;
+    font-weight:$font-semi-bold;
+    color: $title-color;
+}
+.about__info-name{
+    font-size: $smaller-font-size;
+}
+.about__info-title, .about__info-name{
+    display: block;
+    text-align: center;
+}
+.about__buttons{
+    display: flex;
+    justify-content: center;
+}
+
+//    SKILLS //
+.skills__container{
+    row-gap: 0;
+}
+.skills__header{
+    display: flex;
+    align-items: center;
+    margin-bottom: $mb-2-5;
+    cursor: pointer;
+}
+.skills__icon , .skills__arrow{
+    font-size: 2rem;
+    color: $first-color;
+}
+.skills__icon{
+    margin-right: $mb-0-75;
+}
+.skills_title{
+    font-size: $h3-font-size;
+}
+.skills__subtitle{
+    font-size: $small-font-size;
+    color: $text-color-light;
+}
+.skills__arrow{
+    margin-left: auto;
+    transition: .4s;
+}
+.skills__list{
+    row-gap: 1.5rem;
+    padding-left: 2.7rem;
+}
+.skills__titles{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: $mb-0-5;
+}
+.skills__name{
+    font-size: $normal-font-size;
+    font-weight: $font-medium
+}
+.skills__bar, .skills__percentage{
+    height: 5px;
+    border-radius: .25rem;
+}
+
+.skills__bar{
+    background-color: $first-color-lighter;
+}
+.skills__percentage{
+    display: block;
+    background-color: $first-color;
+}
+.skills__html{
+    width: 90%;
+}
+.skills__css{
+    width: 80%;
+}
+.skills__sass{
+    width: 80%;
+}
+.skills__js{
+    width: 60%;
+}
+.skills__react{
+    width: 50%;
+}
+/* do the same proccess with backend skills when addin then
+.skills__html{
+    width: 90%;
+}
+.skills__css{
+    width: 80%;
+}
+.skills__sass{
+    width: 80%;
+}
+.skills__js{
+    width: 60%;
+}
+.skills__react{
+    width: 50%;
+}
+*/
+//soft skills bar
+.skills__comunication{
+    width: 90%;
+}
+.skills__leadership{
+    width: 80%;
+}
+.skills__adaptability{
+    width: 80%;
+}
+.skills__learning{
+    width: 90%;
+}
+.skills__close .skills__list{
+    height: 0;
+    overflow: hidden;
+}
+.skills__open .skills__list{
+    height: max-content;
+    margin-bottom: $mb-2-5;
+}
+.skills__open .skills__arrow{
+    transform: rotate(180deg);
+}
